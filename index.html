@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Tracker Application</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <h1>Job Tracker Application</h1>
+</header>
+
+<!-- DASHBOARD -->
+<section class="dashboard">
+  <div class="card">All Jobs <span id="allCount">8</span></div>
+  <div class="card">Interview <span id="interviewCount">0</span></div>
+  <div class="card">Rejected <span id="rejectedCount">0</span></div>
+</section>
+
+<!-- JOB SECTION -->
+<section class="jobs-section">
+
+  <div class="jobs-header">
+    <h2>Available Jobs</h2>
+    <span id="tabCount">8</span>
+  </div>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="all">All</button>
+    <button class="tab" data-tab="interview">Interview</button>
+    <button class="tab" data-tab="rejected">Rejected</button>
+  </div>
+
+  <div id="jobContainer" class="job-container"></div>
+
+  <div id="emptyMessage" class="empty hidden">
+    <h3>No jobs Available</h3>
+    <p>There are no jobs in this category</p>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
