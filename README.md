@@ -1,6 +1,8 @@
 # Assignment_4_PH
 1.What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
+
 Answer:
+
 Method	Returns	Selector Type	Live Collection
 getElementById()	Single element	Id only	Does not
 getElementByClassName()	HTML Collection (multiple)	Class only	Does
