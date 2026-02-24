@@ -1,0 +1,151 @@
+body {
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+  background: #f5f6fa;
+}
+
+/* HEADER */
+.header {
+  background: #2f80ed;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+/* DASHBOARD */
+.dashboard {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.dashboard .card {
+  flex: 1;
+  min-width: 150px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* JOB SECTION */
+.jobs-section {
+  padding: 20px;
+}
+
+.jobs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* TABS */
+.tabs {
+  margin: 15px 0;
+}
+
+.tab {
+  padding: 8px 15px;
+  margin-right: 5px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.tab.active {
+  background: #2f80ed;
+  color: white;
+}
+
+/* JOB GRID (Responsive as requested) */
+.job-container {
+  display: grid;
+  gap: 15px;
+}
+
+/* Small devices */
+@media (max-width: 576px) {
+  .job-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Medium devices */
+@media (min-width: 577px) and (max-width: 992px) {
+  .job-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*Medium Large devices */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .job-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+/* Large devices */
+@media (min-width: 1200px) {
+  .job-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* JOB CARD */
+.job-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.job-card h3 {
+  margin: 0;
+  font-weight: 600;
+}
+
+/* BUTTONS */
+.buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+button {
+  cursor: pointer;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.interview {
+  background: green;
+  color: white;
+}
+
+.rejected {
+  background: red;
+  color: white;
+}
+
+.delete {
+  background: black;
+  color: white;
+}
+
+/* EMPTY MESSAGE */
+.empty {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.hidden {
+  display: none;
+}
